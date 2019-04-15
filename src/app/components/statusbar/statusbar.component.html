@@ -1,0 +1,6 @@
+<nav class="navbar fixed-bottom navbar-dark" [class.bg-success]="socketServer.getStatus()" [class.bg-danger]="!socketServer.getStatus()">
+    <p class="navbar-brand float-right mb-0">
+        <span *ngIf="socketServer.getStatus()">Servidor conectado</span>
+        <span *ngIf="!socketServer.getStatus()">Servidor desconectado</span>
+    </p>
+</nav>

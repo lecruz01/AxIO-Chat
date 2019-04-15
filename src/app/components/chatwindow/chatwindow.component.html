@@ -1,0 +1,15 @@
+<div class="chat-window d-flex flex-column align-items-start">
+    <div *ngFor="let message of getMessages()" class="message">
+        <div class="message-content" [class.self]="message.self">
+            {{ message.message }}
+        </div>
+    </div>
+</div>
+<div class="message-controls d-flex align-items-center justify-content-between">
+    <form class="form-inline w-100 d-flex align-items-center justify-content-between">
+        <div class="form-group">
+            <input id="message-box" type="text" class="form-control" placeholder="Escribe un mensaje">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="sendMessage()">Enviar</button>
+    </form>
+</div>

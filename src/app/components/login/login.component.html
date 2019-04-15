@@ -1,0 +1,21 @@
+<div class="login-wrapper d-flex justify-content-center align-items-center flex-column">
+    <img class="w-50" src="./assets/images/logo.png" title="Axiochat">
+    <p class="title">AxIO<small>chat</small></p>
+    <form class="w-75">
+        <div class="input-group mb-3 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control mr-sm-2" [(ngModel)]="user" name="user" placeholder="usuario@example.com" autocomplete="off">
+        </div>
+        <div class="input-group mb-3 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-lock"></i></div>
+            </div>
+            <input type="password" class="form-control mr-sm-2" [(ngModel)]="password" name="password">
+        </div>
+
+        <button class="btn btn-primary btn-block mb-1" (click)="login()">Acceder</button>
+        <button class="btn btn-danger btn-block" [routerLink]="[ '/register' ]">Crear cuenta</button>
+    </form>
+</div>

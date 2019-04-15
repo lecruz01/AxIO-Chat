@@ -1,0 +1,18 @@
+<div class="registro-wrapper d-flex justify-content-center align-items-center flex-column">
+    <h1 class="title">Cuenta Nueva</h1>
+    <form (submit)="register()">
+        <div class="input-group mb-3 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input type="text" class="form-control mr-sm-2" id="correoInput" placeholder="usuario@example.com" autocomplete="off">
+        </div>
+        <div class="input-group mb-3 mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa-lock"></i></div>
+            </div>
+            <input type="text" class="form-control mr-sm-2" id="passwordInput">
+        </div>
+        <input type="submit" class="btn btn-primary btn-block" value="Crear cuenta">
+    </form>
+</div>
